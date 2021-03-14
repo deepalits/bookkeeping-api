@@ -1,0 +1,17 @@
+en:
+  model:
+    record_not_found: "Couldn't find %{model}"
+  update:
+    success: "%{model} updated successfully"
+    failed: "Unable to update %{model}"
+  create:
+    failed: "Unable to save %{model}"
+    success: "%{model} created successfully"
+
+  fetch:
+    success: "%{model} fetched successfully"
+    failed: "Unable to fetch %{model}"
+
+  destroy:
+    success: "%{model} deleted successfully"
+    failed: "Unable to delete %{model}"
