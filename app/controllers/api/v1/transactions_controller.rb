@@ -18,8 +18,16 @@ class Api::V1::TransactionsController < ApplicationController
   end
 
   def create
-    @transaction = Transaction.create!(transaction_params)
-    json_response(@transaction, :created)
+    @transaction = Transaction.create(transaction_params)
+    if @transaction.errors.empty?
+      json_response(@transaction, :created)
+    else
+      render_error(
+        message: I18n.t('create.failed', model: 'Transaction'),
+        errors:  @transaction&.errors&.full_messages,
+        status:  :unprocessable_entity
+      )
+    end
   end
 
   private
