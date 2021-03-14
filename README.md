@@ -1,24 +1,4 @@
-# README
+# Assumptions
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# To filter transactions against a contact, please pass contact number e.g. '9876543210'
+# Configured pagination with 4 records per page for overall application

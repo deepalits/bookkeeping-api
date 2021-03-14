@@ -18,6 +18,6 @@ class Api::V1::ContactsController < ApplicationController
   private
 
   def contact_params
-    params.require(:contact).permit(:name, :contact_number)
+    params.permit(:name, :contact_number)
   end
 end
